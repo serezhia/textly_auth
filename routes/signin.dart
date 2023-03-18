@@ -252,6 +252,7 @@ Future<Response> _post(RequestContext context) async {
   final oAuth2Token = OAuth2Token(
     accessToken: generateToken(userId: user.userId ?? -1),
     refreshToken: generateToken(userId: user.userId ?? -1, refreshToken: true),
+    tokenType: 'Bearer',
   );
 
   logger.i('$uuid: Successful login');
