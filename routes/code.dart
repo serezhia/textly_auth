@@ -13,9 +13,9 @@ import 'package:mailer/smtp_server.dart';
 import 'package:postgres/postgres.dart';
 import 'package:textly_auth/models/code/code.dart';
 import 'package:textly_auth/repositories/code_repository.dart';
-import 'package:textly_auth/repositories/user_repository.dart';
-import 'package:textly_auth/tamplates/code_message_tamplate.dart';
+import 'package:textly_auth/templates/code_message_tamplate.dart';
 import 'package:textly_auth/utils/code_utils.dart';
+import 'package:textly_core/textly_core.dart';
 
 FutureOr<Response> onRequest(RequestContext context) async {
   switch (context.request.method) {

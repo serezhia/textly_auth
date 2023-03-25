@@ -1,10 +1,11 @@
 import 'dart:async';
 import 'dart:io';
+
 import 'package:dart_frog/dart_frog.dart';
 import 'package:logger/logger.dart';
 import 'package:textly_auth/repositories/recovery_code_repository.dart';
-import '../../../core/lib/src/repositories/user_repository.dart';
-import 'package:textly_auth/tamplates/unblock_page_tamplate.dart';
+import 'package:textly_auth/templates/unblock_page_tamplate.dart';
+import 'package:textly_core/textly_core.dart' show UserRepository;
 
 FutureOr<Response> onRequest(RequestContext context) async {
   switch (context.request.method) {

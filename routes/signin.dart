@@ -9,7 +9,7 @@ import 'package:mailer/mailer.dart';
 import 'package:mailer/smtp_server.dart';
 import 'package:textly_auth/repositories/code_repository.dart';
 import 'package:textly_auth/repositories/recovery_code_repository.dart';
-import 'package:textly_auth/tamplates/unblock_message_tamplate.dart';
+import 'package:textly_auth/templates/unblock_message_tamplate.dart';
 import 'package:textly_auth/utils/tokens_utils.dart';
 import 'package:textly_core/textly_core.dart';
 import 'package:uuid/uuid.dart';
