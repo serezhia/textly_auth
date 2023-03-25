@@ -9,8 +9,8 @@ import 'package:textly_auth/data_sources/postgres_recovery_code_data_source.dart
 import 'package:textly_auth/data_sources/postgres_user_data_source.dart';
 import 'package:textly_auth/repositories/code_repository.dart';
 import 'package:textly_auth/repositories/recovery_code_repository.dart';
-import 'package:textly_auth/repositories/user_repository.dart';
 import 'package:textly_auth/utils/env_utils.dart';
+import 'package:textly_core/textly_core.dart';
 
 Future<HttpServer> run(Handler handler, InternetAddress ip, int port) async {
   final logger = Logger(

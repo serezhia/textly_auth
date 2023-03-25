@@ -1,8 +1,7 @@
 // ignore_for_file: public_member_api_docs
 
 import 'package:postgres/postgres.dart';
-import 'package:textly_auth/models/user/user.dart';
-import 'package:textly_auth/repositories/user_repository.dart';
+import 'package:textly_core/textly_core.dart';
 
 class PostgresUserDataSource implements UserRepository {
   PostgresUserDataSource(this.connection);
